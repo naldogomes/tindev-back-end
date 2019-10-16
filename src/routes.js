@@ -6,4 +6,10 @@ routes.get('/', (req, res) => {
     return res.json({ message: 'Hello World' });
 })
 
+routes.post('/devs', (req, res) => {
+    console.log(req.body.name)
+
+    return res.json({ ok: true });
+})
+
 module.exports = routes;
